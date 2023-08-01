@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    width: 100svw;
+    color: rgb(255, 0, 119);
+    background-color: rgb(68, 67, 67);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    width: 100svw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    padding-top: 2%;
+    width: 100svw;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.conteudo {
+    background-color: rgb(255, 0, 0);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 10svw;
+    height: 100svh;
+    position: fixed;
+    background-color: white;
+}
