@@ -7,11 +7,15 @@ ul {
     list-style-type: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2%;
-    width: 100svw;
+    padding-bottom: 1%;
+    width: 100%;
     color: rgb(255, 0, 119);
     background-color: rgb(68, 67, 67);
 }
@@ -19,28 +23,31 @@ header {
 .cabecalho {
     display: flex;
     flex-direction: row;
-    width: 100svw;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
 nav {
     display: flex;
-    padding-top: 2%;
-    width: 100svw;
+    padding-top: 1%;
+    width: 100%;
     flex-direction: row;
     justify-content: space-around;
 }
 
+main {
+    display: flex;
+}
+
 .conteudo {
     background-color: rgb(255, 0, 0);
+    width: 90svw;
 }
 
 aside {
     display: flex;
     flex-direction: column;
     width: 10svw;
-    height: 100svh;
-    position: fixed;
     background-color: white;
 }
