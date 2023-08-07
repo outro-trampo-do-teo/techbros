@@ -1,0 +1,112 @@
+:root {
+    --rosa-techbros: #FF009D;
+    --rosa-secundario: #fcbdc7;
+    --cor-fundo-primaria: #0a0a0a;
+    --cor-fundo-secundaria: #000000e1;
+}
+
+::selection {
+    background-color: var(--rosa-secundario);
+    color: var(--rosa-techbros);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo-primaria);
+    color: white;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--cor-fundo-secundaria);
+    backdrop-filter: blur(5px);
+}
+
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-fundo-secun);
+}
+
+nav > h3 {
+    padding: 0px 20px;
+    color: var(--rosa-techbros);
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+
+nav > h3:hover {
+    background-color: var(--rosa-techbros);
+    color: var(--rosa-secundario);
+    font-size: 1.4em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    min-width: 100svw;
+    padding-top: 10svh;
+
+    background-color: var(--cor-fundo-secundaria);
+}
+
+.detalhes_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0% 5%;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 25%;
+}
+
+.resumo_time {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.links_internos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
