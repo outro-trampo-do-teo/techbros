@@ -27,6 +27,10 @@ ul {
     list-style-type: none;
 }
 
+p {
+    font-size:  clamp(1em, 1em + .4vw, 1.5em);
+}
+
 header {
     display: flex;
     position: fixed;
@@ -52,7 +56,7 @@ header {
     gap: 30px;
 }
 
-/* Menu de navegação */
+/* Menu de navegação. */
 nav {
     display: flex;
     justify-content: space-around;
@@ -72,7 +76,9 @@ nav > h3:hover, nav > a:hover {
     padding: 0 16.66% 0 16.66%;
     text-align: center;
 }
+/* Fim menu de navegação. */
 
+/* Rodapé. */
 footer {
     display: flex;
     flex-direction: column;
@@ -109,3 +115,5 @@ footer {
     justify-content: space-around;
     width: 100%;
 }
+
+/* Fim rodapé. */
