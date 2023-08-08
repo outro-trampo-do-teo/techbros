@@ -1,40 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Poppins&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    color: #fff;
+}
+
+.header_linha-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+}
+
+.header_linha-1 > h1 {
+    color: var(--rosa-techbros);
+}
+
+.info_nav {
+    display: flex;
+    gap: 40px;
+
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0 5%;
+}
+
 main {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    column-gap: 50px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100svw;
-    gap: 120px;
-    padding-top: 120px;
+    gap: 70px;
+    padding-top: 75px;
 }
 
-.showcase_image {
+.msg_bemvindo {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    background-image: url(../image/Banner\ azul\ para\ sites\ parcele\ suas\ compras\ em\ até\ 10x.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: flex-start;
+    font-size: 30pt;
+    align-items: end;
+    width: 100%;
+    height: calc(100svh - 8svh);
 }
 
-.sobre_time {
+.msg_bemvindo > h1 {    
+    padding: 0 0 120px 20px;
+}
+
+h1 > span {
+    color: var(--rosa-techbros);
+}
+
+.sobre {
     display: flex;
-    flex-direction: row;
+    padding-top: 70px;
+    align-items: flex-start;
     justify-content: center;
-    gap: 50px;
-    width: 50%;
+    width: 100svw;
 }
 
-.coluna_imagens {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 20px;
-}
-
-.img {
-    border-radius: 12px;
-}
-
-.time_resumo {
-    display: flex;
-    flex-direction: column;
+.sobre > article:first-of-type {
+    width: 25svw;
 }
