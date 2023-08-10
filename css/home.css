@@ -90,49 +90,35 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     align-self: flex-start;
-    font-size: 30pt;
     align-items: end;
     width: 100%;
     height: calc(100svh - 8svh);
 }
 
-.msg_bemvindo > h1 {    
+.msg_bemvindo > h1 { 
+    width: 100svw;  
     padding: 0 0 120px 20px;
+    font-size: clamp(15.96px, 4.5vw + 30px, 5em);
 }
 
 h1 > span {
     color: var(--rosa-techbros);
 }
 
-/*.sobre {
-
-    display: flex;
-    flex-direction: row;
-    padding-top: 70px;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100svw;
-}
-
-.conteudo_1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 30%;
-}*/
-
 .subtitulo {
     font-size: clamp(1.2em, 1.5vw, 25px);
 }
 
-p {
+.texto {
     font-size: clamp(.9em, 1.4vw, 20px);
+    text-align: justify;
 }
 
 .historia, .vitorias, .sobre {
     display: flex;
     flex-direction: row;
     width: 60%;
+    gap: 20px;
     align-items: center;
 }
 
@@ -154,11 +140,24 @@ figcaption {
 }
 
 @media only screen and (max-width: 1024px) {
+
+    .msg_bemvindo {
+        width: 100svw;
+        background-image: url(../image/banner_teste.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .msg_bemvindo > h1 {    
+        font-size: clamp(12px, 4.3vw + 22px, 5em);
+    }
+    
     .subtitulo {
         font-size: clamp(1.1em, 1.7vw, 25px);
     }
     
-    p {
+    .texto {
         font-size: clamp(.6em, 1.5vw, 19px);
     }
 
@@ -169,6 +168,10 @@ figcaption {
 }
 
 @media only screen and (max-width: 768px) {
+    .msg_bemvindo > h1 {    
+        font-size: clamp(9.5px, 4vw + 18px, 5em);
+    }
+
     .historia, .vitorias, .sobre {
         flex-direction: column;
     }
@@ -188,7 +191,7 @@ figcaption {
         font-size: clamp(1em, 1.7vw, 25px);
     }
     
-    p {
+    .texto {
         font-size: clamp(.6em, 1.5vw + 8px, 18px);
     }
 
@@ -222,11 +225,15 @@ figcaption {
 }
 
 @media only screen and (max-width: 480px) {
+    .msg_bemvindo > h1 {    
+        font-size: clamp(10px, 4.2vw + 20px, 5em);
+    }
+
     .subtitulo {
         font-size: clamp(.6em, 1.7vw + 10px, 25px);
     }
     
-    p {
+    .texto {
         font-size: clamp(.4em, 1.5vw + 10px, 17px);
     }
 
