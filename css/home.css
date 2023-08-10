@@ -85,14 +85,25 @@ main {
 
 .msg_bemvindo {
     display: flex;
+    /*
     background-image: url(../image/banner_teste.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    */
     align-self: flex-start;
     align-items: end;
+    flex-direction: row;
     width: 100%;
-    height: calc(100svh - 8svh);
+    height: 100svh;
+}
+
+.banner {
+    position: absolute;
+    width: 100svw;
+    top: 48px;
+    z-index: -2;
+    height: 100%;
 }
 
 .msg_bemvindo > h1 { 
@@ -140,15 +151,6 @@ figcaption {
 }
 
 @media only screen and (max-width: 1024px) {
-
-    .msg_bemvindo {
-        width: 100svw;
-        background-image: url(../image/banner_teste.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
     .msg_bemvindo > h1 {    
         font-size: clamp(12px, 4.3vw + 22px, 5em);
     }
@@ -192,7 +194,7 @@ figcaption {
     }
     
     .texto {
-        font-size: clamp(.6em, 1.5vw + 8px, 18px);
+        font-size: clamp(1em, 1.7vw + 10px, 22px);
     }
 
     img {
