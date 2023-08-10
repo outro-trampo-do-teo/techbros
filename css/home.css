@@ -29,7 +29,31 @@ body {
 }
 
 .header_linha-1 > h1 {
+    cursor: pointer;
     color: var(--rosa-techbros);
+}
+
+.link {
+    display: inline-block;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--rosa-techbros);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .info_nav {
@@ -61,7 +85,7 @@ main {
 
 .msg_bemvindo {
     display: flex;
-    background-image: url(../image/Banner\ azul\ para\ sites\ parcele\ suas\ compras\ em\ até\ 10x.png);
+    background-image: url(../image/banner_teste.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,12 +112,41 @@ h1 > span {
     width: 100svw;
 }
 
-.sobre > article:first-of-type {
-    width: 25svw;
+.conteudo_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
 }
 
-/* Responsividade */
+.subtitulo {
+    font-size: clamp(1.2em, 1.5vw, 25px);
+}
 
+p {
+    font-size: clamp(.9em, 1vw, 20px);
+}
+
+.historia, .vitorias {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.coluna_img {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+}
+
+
+
+/* Responsividade */
 @media only screen and (max-width: 1200px) {
 
 }
@@ -102,14 +155,13 @@ h1 > span {
 
 }
 
-
 @media only screen and (max-width: 768px) {
     #menuAbrir {
         display: block;
     }
 
     .header_linha-1 {
-        justify-content: space-around;
+        justify-content: space-between;
     }
     
     .info_nav {

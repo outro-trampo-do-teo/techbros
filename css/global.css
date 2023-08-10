@@ -20,6 +20,7 @@
 body {
     background-color: var(--cor-fundo-primaria);
     color: white;
+    overflow-x: hidden;
 }
 
 ul {

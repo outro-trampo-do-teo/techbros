@@ -1,16 +1,13 @@
 const $menuAbrir = document.getElementById('menuAbrir')
-const $menuFechar = document.getElementById('menuFechar')
 
-$menuAbrir.addEventListener('click', abrirMenu)
-$menuFechar.addEventListener('click', fecharMenu)
+count = 1
 
-function abrirMenu () {
-    $menuAbrir.style.display = "none"
-    document.getElementById('info_nav_menu').style.display = "flex"
-}
+$menuAbrir.addEventListener('click', () => {
+    count++
+    if (count % 2 == 0) {
+        document.getElementById('info_nav_menu').style.display = "flex"
+    } else {
+        document.getElementById('info_nav_menu').style.display = "none"
+    }
+})
 
-
-function fecharMenu () {
-    $menuAbrir.style.display = "block"
-    document.getElementById('info_nav_menu').style.display = "none"
-}
