@@ -222,8 +222,6 @@ figcaption {
 }
 
 @media only screen and (max-width: 480px) {
-    
-    
     .subtitulo {
         font-size: clamp(.6em, 1.7vw + 10px, 25px);
     }
