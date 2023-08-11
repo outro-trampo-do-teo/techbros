@@ -117,7 +117,7 @@ h1 > span {
 }
 
 .subtitulo {
-    font-size: clamp(1.2em, 1.5vw, 25px);
+    font-size: clamp(1.2em, 2vw + 20px, 25px);
 }
 
 .texto {
@@ -143,6 +143,11 @@ figcaption {
     gap: 20px;
 }
 
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 
 /* Responsividade */
@@ -156,7 +161,7 @@ figcaption {
     }
     
     .subtitulo {
-        font-size: clamp(1.1em, 1.7vw, 25px);
+        font-size: clamp(1.1em, 2vw + 20px, 40px);
     }
     
     .texto {
@@ -179,8 +184,6 @@ figcaption {
     }
 
     .conteudo {
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -190,7 +193,7 @@ figcaption {
     }
 
     .subtitulo {
-        font-size: clamp(1em, 1.7vw, 25px);
+        font-size: clamp(1em, 2vw + 20px, 70px);
     }
     
     .texto {
@@ -232,7 +235,7 @@ figcaption {
     }
 
     .subtitulo {
-        font-size: clamp(.6em, 1.7vw + 10px, 25px);
+        font-size: clamp(.6em, 2vw + 20px, 40px);
     }
     
     .texto {
