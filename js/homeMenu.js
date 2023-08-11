@@ -10,4 +10,3 @@ $menuAbrir.addEventListener('click', () => {
         document.getElementById('info_nav_menu').style.display = "none"
     }
 })
-
