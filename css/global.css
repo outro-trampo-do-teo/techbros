@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    border-radius: 15px;
+}
+
 ul {
     list-style-type: none;
 }
@@ -46,6 +50,7 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
 
 .sobre {
@@ -90,6 +95,7 @@ footer {
 
 .detalhes_footer {
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
     gap: 40px;

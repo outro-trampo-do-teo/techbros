@@ -102,15 +102,16 @@ main {
 
 .msg_bemvindo > h1 { 
     margin: auto;
-    padding-top: 450px;
-    font-size: clamp(15.96px, 4.5vw + 30px, 5em);
+    padding-top: 350px;
+    text-align: center;
+    font-size: clamp(1em, 3.5vw + 25px, 4em);
 }
 
 h1 > span {
     color: var(--rosa-techbros);
     text-shadow: 0 0 5px var(--rosa-secundario),
-    0 0 400px var(--rosa-techbros),
-    0 0 600px var(--rosa-techbros);
+        0 0 400px var(--rosa-techbros),
+        0 0 600px var(--rosa-techbros);
 }
 
 .scroll {
@@ -118,10 +119,31 @@ h1 > span {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: clamp(1em, .5vw + .8em, 3em);
+    text-align: center;
+    font-size: clamp(1em, .4vw + .8em, 2.5em);
     width: 50%;
-    padding-top: 200px;
+    padding-top: 120px;
     padding-bottom: 200px;
+}
+
+.patrocinadores {
+    display: flex;
+    position: absolute;
+    top: 120%;
+    align-self: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.patrocinador {
+    filter: grayscale(100%);
+    transition: linear .3s;
+}
+
+.patrocinador:hover {
+    filter: grayscale(0%);
+    transform: scaleX(2000px);
 }
 
 .subtitulo {
@@ -157,16 +179,15 @@ figcaption {
     gap: 20px;
 }
 
-
 /* Responsividade */
-@media only screen and (max-width: 1200px) {
-
-}
-
 @media only screen and (max-width: 1024px) {    
     .banner {
         width: 100%;
         height: 30%;
+    }
+
+    .scroll {
+        font-size: clamp(.8em, .4vw + .5em, 2em);
     }
 
     .msg_bemvindo > h1 {    
@@ -191,6 +212,10 @@ figcaption {
     .banner {
         width: 100%;
         height: 35%;
+    }
+
+    .scroll {
+        font-size: clamp(.6em, .4vw + .3em, 1.5em);
     }
 
     .msg_bemvindo > h1 {    
@@ -256,8 +281,12 @@ figcaption {
         height: 40%;
     }
 
+    .scroll {
+        font-size: clamp(.5em, .4vw + .2em, 1   em);
+    }
+
     .msg_bemvindo > h1 {    
-        font-size: clamp(10px, 4.2vw + 20px, 5em);
+        font-size: clamp(0.62em, 3.2vw + 1em, 4em);
     }
 
     .subtitulo {
