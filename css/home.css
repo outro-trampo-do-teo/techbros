@@ -135,19 +135,19 @@ h1 > span {
     width: 100%;
 }
 
-.area-principal {
+.area_principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 20%;
     width: 100%;
+    gap: 40px;
+    flex-wrap: nowrap;
 }
 
 .patrocinadores {
     display: flex;
     gap: 20px;
-    position: absolute;
     justify-self: flex-end;
     align-self: flex-start;
     flex-direction: column;
@@ -183,14 +183,16 @@ h1 > span {
 
 .texto {
     font-size: clamp(.9em, 1.4vw, 20px);
+    width: 450px;
     text-align: justify;
 }
 
 .historia, .vitorias, .sobre {
     display: flex;
     flex-direction: row;
-    width: 60%;
+    max-width: fit-content;
     gap: 20px;
+    min-width: 60%;
     align-items: center;
 }
 
@@ -235,16 +237,16 @@ figcaption {
     }
 
     .subtitulo {
-        font-size: clamp(1.1em, 2vw + 20px, 40px);
+        font-size: clamp(1.1em, 1vw + 20px, 40px);
     }
     
     .texto {
         font-size: clamp(1em, 1.5vw, 19px);
     }
 
-    img {
-        width: 250px;
-        height: 250px;
+    .img {
+        width: 180px;
+        height: 180px;
     }
 }
 
@@ -260,6 +262,34 @@ figcaption {
 
     .msg_bemvindo > h1 {    
         font-size: clamp(9.5px, 4vw + 18px, 5em);
+    }
+
+    .geral {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .patrocinadores {
+        position: initial;
+        width: 60svw;
+        margin: auto;
+    }
+
+    .patrocinadores_img {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .patrocinador {
+        width: 200px;
+        height: 70px;
+    }
+
+    .area_principal {
+        padding: 0;
     }
 
     .historia, .vitorias, .sobre {
