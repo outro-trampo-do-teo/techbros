@@ -126,24 +126,55 @@ h1 > span {
     padding-bottom: 200px;
 }
 
+.geral {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.area-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20%;
+    width: 100%;
+}
+
 .patrocinadores {
     display: flex;
+    gap: 20px;
     position: absolute;
-    top: 120%;
-    align-self: flex-end;
+    justify-self: flex-end;
+    align-self: flex-start;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: clamp(1em, 1vw, 2em);
+    background-color: var(--cor-fundo-primaria);
+    width: 25%;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px var(--cor-fundo-primaria);
+    border-radius: 10px;
+}
+
+.patrocinadores_img {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .patrocinador {
     filter: grayscale(100%);
-    transition: linear .3s;
+    transition: linear .4s;
 }
 
 .patrocinador:hover {
     filter: grayscale(0%);
-    transform: scaleX(2000px);
+    transform: scale(1.1);
 }
 
 .subtitulo {
@@ -194,6 +225,15 @@ figcaption {
         font-size: clamp(12px, 4.3vw + 22px, 5em);
     }
     
+    .patrocinadores {
+        font-size: clamp(1em .8vw, 2.5em);
+    }
+
+    .patrocinador {
+        width: 220px;
+        height: 100px;
+    }
+
     .subtitulo {
         font-size: clamp(1.1em, 2vw + 20px, 40px);
     }
