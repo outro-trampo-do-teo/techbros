@@ -41,6 +41,7 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100svw;
+    z-index: 3;
     background-color: var(--cor-fundo-secundaria);
     backdrop-filter: blur(5px);
 }

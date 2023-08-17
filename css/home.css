@@ -19,6 +19,7 @@ body {
     display: none;
     position: fixed;
     background-color: var(--cor-fundo-secundaria);
+    z-index: 4;
 }
 
 .header_linha-1 {
@@ -159,6 +160,7 @@ h1 > span {
     backdrop-filter: blur(20px);
     box-shadow: 0 0 20px var(--cor-fundo-primaria);
     border-radius: 10px;
+    z-index: 2;
 }
 
 .patrocinadores_img {
@@ -170,6 +172,7 @@ h1 > span {
 .patrocinador {
     filter: grayscale(100%);
     transition: linear .4s;
+    cursor: pointer;
 }
 
 .patrocinador:hover {
@@ -182,8 +185,8 @@ h1 > span {
 }
 
 .texto {
-    font-size: clamp(.9em, 1.4vw, 20px);
-    width: 450px;
+    font-size: clamp(.9em, 1.4vw + 8px, 20px);
+    width: 600px;
     text-align: justify;
 }
 
@@ -232,8 +235,8 @@ figcaption {
     }
 
     .patrocinador {
-        width: 220px;
-        height: 100px;
+        width: 200px;
+        height: 80px;
     }
 
     .subtitulo {
