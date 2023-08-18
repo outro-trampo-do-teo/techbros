@@ -79,8 +79,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 100svw;
-    min-width: fit-content;
+    max-width: fit-content;
+    min-width: 100%;
     gap: 70px;
     padding-top: 50px;
 }
@@ -98,7 +98,7 @@ main {
     padding-top: 45px;
     top: 48px;
     z-index: -2;
-    width: 100%;
+    width: 100svw;
     height: 50%;
 }
 
@@ -130,12 +130,9 @@ h1 > span {
 
 .geral {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    position: relative;
-    justify-content: space-between;
-    padding-right: 20px;
-    width: 100%;
+    flex-direction: row;
+    min-width: 80%;
+    max-width: fit-content;
 }
 
 .area_principal {
@@ -144,8 +141,7 @@ h1 > span {
     justify-content: center;
     align-items: center;
     max-width: fit-content;
-    padding-left: 250px;
-    min-width: 100%;
+    min-width: 75%;
     gap: 40px;
     flex-wrap: nowrap;
 }
@@ -155,20 +151,17 @@ h1 > span {
     gap: 20px;
     align-items: center;
     justify-content: center;
-    background-color: blue;
-    max-width: fit-content;
+    align-self: flex-start;
     flex-wrap: nowrap;
     flex-direction: column;
-    min-width: 20%;
-    margin-right: 40px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 20px var(--cor-fundo-primaria);
+    max-width: fit-content;
+    min-width: 25%;
     border-radius: 10px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .patrocinadores > li > h1 {
-    font-size: clamp(1em, 1vw + 10px, 2em);
+    font-size: clamp(1em, 1vw + 8px, 2em);
 }
 
 .patrocinadores_img {
@@ -196,7 +189,7 @@ h1 > span {
 
 .texto {
     font-size: clamp(.8em, .8vw + 8px, 18px);
-    width: 600px;
+    width: 300px;
     text-align: justify;
 }
 
