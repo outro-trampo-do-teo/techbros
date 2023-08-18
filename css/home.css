@@ -132,6 +132,7 @@ h1 > span {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    position: relative;
     justify-content: space-between;
     padding-right: 20px;
     width: 100%;
@@ -143,6 +144,7 @@ h1 > span {
     justify-content: center;
     align-items: center;
     max-width: fit-content;
+    padding-left: 250px;
     min-width: 100%;
     gap: 40px;
     flex-wrap: nowrap;
@@ -151,8 +153,6 @@ h1 > span {
 .patrocinadores {
     display: flex;
     gap: 20px;
-    justify-self: flex-end;
-    align-self: flex-start;
     align-items: center;
     justify-content: center;
     background-color: blue;
