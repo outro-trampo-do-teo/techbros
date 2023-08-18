@@ -79,7 +79,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100svw;
+    max-width: 100svw;
+    min-width: fit-content;
     gap: 70px;
     padding-top: 50px;
 }
@@ -154,13 +155,17 @@ h1 > span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: clamp(1em, 1vw, 2em);
-    background-color: var(--cor-fundo-primaria);
+    background-color: blue;
     width: 25%;
+    margin-right: 40px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 20px var(--cor-fundo-primaria);
     border-radius: 10px;
     z-index: 2;
+}
+
+.patrocinadores > h1 {
+    font-size: clamp(.6em, .5vw + 8px, 1.5em);
 }
 
 .patrocinadores_img {
@@ -170,6 +175,7 @@ h1 > span {
 }
 
 .patrocinador {
+    width: 14svw;
     filter: grayscale(100%);
     transition: linear .4s;
     cursor: pointer;
@@ -185,7 +191,7 @@ h1 > span {
 }
 
 .texto {
-    font-size: clamp(.9em, 1.4vw + 8px, 20px);
+    font-size: clamp(.6em, .8vw + 5px, 18px);
     width: 600px;
     text-align: justify;
 }
@@ -268,7 +274,7 @@ figcaption {
     }
 
     .geral {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
