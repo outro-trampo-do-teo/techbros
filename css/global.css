@@ -23,8 +23,16 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    border-radius: 15px;
+}
+
 ul {
     list-style-type: none;
+}
+
+p {
+    font-size:  clamp(1em, 1em + .4vw, 1.5em);
 }
 
 header {
@@ -32,17 +40,18 @@ header {
     position: fixed;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100svw;
+    z-index: 3;
     background-color: var(--cor-fundo-secundaria);
     backdrop-filter: blur(5px);
 }
-
 
 .cabecalho {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
 
 .sobre {
@@ -52,7 +61,7 @@ header {
     gap: 30px;
 }
 
-/* Menu de navegação */
+/* Menu de navegação. */
 nav {
     display: flex;
     justify-content: space-around;
@@ -60,35 +69,38 @@ nav {
     background-color: var(--cor-fundo-secun);
 }
 
-nav > h3 {
-    padding: 0px 20px;
+nav > h3, nav > a {
     color: var(--rosa-techbros);
     transition: ease-in-out .5s;
     cursor: pointer;
 }
 
-nav > h3:hover {
+nav > h3:hover, nav > a:hover {
     background-color: var(--rosa-techbros);
     color: var(--rosa-secundario);
-    font-size: 1.4em;
+    padding: 0 16.66% 0 16.66%;
+    text-align: center;
 }
+/* Fim menu de navegação. */
 
+/* Rodapé. */
 footer {
     display: flex;
     flex-direction: column;
     max-width: fit-content;
     min-width: 100svw;
     padding-top: 10svh;
-
+    gap: 35px;
     background-color: var(--cor-fundo-secundaria);
 }
 
 .detalhes_footer {
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
-    padding: 0% 5%;
+    gap: 40px;
+    padding: 0% 20px;
 }
 
 .contatos {
@@ -96,17 +108,85 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    font-size: clamp(1em, 1vw, 22px);
     width: 25%;
 }
 
 .resumo_time {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 50svw;
+}
+
+.resumo_time > p {
+    font-size: clamp(.8em, 1.2vw, 18px);
+    text-align: justify;
 }
 
 .links_internos {
     display: flex;
     justify-content: space-around;
+    font-size: clamp(1.2em, 1.5vw, 22px);
     width: 100%;
+}
+
+.redes_sociais {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 15px;
+}
+
+/* Fim rodapé. */
+
+/* Responsividade */
+@media only screen and (max-width: 1024px) {
+    .resumo_time > p {
+        font-size: clamp(.5em, .6vw, 16px);
+    }
+    
+    .links_internos {
+        font-size: clamp(1em, 1.5vw, 20px);
+    }
+    .contatos {
+        font-size: clamp(.9em, .8vw, 20px);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .resumo_time > p {
+        font-size: clamp(.3em, .5vw, 16px);
+    }
+    
+    .links_internos {
+        font-size: clamp(1em, 1.5vw, 20px);
+    }
+    .contatos {
+        font-size: clamp(.9em, .8vw, 20px);
+    }
+
+    .detalhes_footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .redes_sociais {
+        flex-direction: row;
+        gap: 35px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .resumo_time > p {
+        font-size: clamp(.2em, .3vw, 16px);
+    }
+    
+    .links_internos {
+        font-size: clamp(.8em, 1.5vw, 20px);
+    }
+    .contatos {
+        font-size: clamp(.7em, .5vw, 20px);
+    }
 }
