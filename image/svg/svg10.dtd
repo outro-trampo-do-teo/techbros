@@ -1701,4 +1701,4 @@
    y %Coordinate; #IMPLIED
    width %Length; #REQUIRED
    height %Length; #REQUIRED
-   %StructuredText; >
+   %StructuredText;

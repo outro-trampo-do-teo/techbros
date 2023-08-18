@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Poppins&display=swap');
 
-*, *::before, *::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 body {
     background: black;
     color: #fff;
-}
+}  
 
 #menuAbrir {
     display: none;
@@ -142,7 +142,8 @@ h1 > span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: fit-content;
+    min-width: 100%;
     gap: 40px;
     flex-wrap: nowrap;
 }
@@ -152,11 +153,13 @@ h1 > span {
     gap: 20px;
     justify-self: flex-end;
     align-self: flex-start;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: blue;
-    width: 25%;
+    max-width: fit-content;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    min-width: 20%;
     margin-right: 40px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 20px var(--cor-fundo-primaria);
@@ -164,12 +167,13 @@ h1 > span {
     z-index: 2;
 }
 
-.patrocinadores > h1 {
-    font-size: clamp(.6em, .5vw + 8px, 1.5em);
+.patrocinadores > li > h1 {
+    font-size: clamp(1em, 1vw + 10px, 2em);
 }
 
 .patrocinadores_img {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
 }
@@ -191,7 +195,7 @@ h1 > span {
 }
 
 .texto {
-    font-size: clamp(.6em, .8vw + 5px, 18px);
+    font-size: clamp(.8em, .8vw + 8px, 18px);
     width: 600px;
     text-align: justify;
 }
@@ -222,6 +226,21 @@ figcaption {
 }
 
 /* Responsividade */
+@media only screen and (max-width: 1200px) {
+    .patrocinadores {
+        margin-right: 20px;
+    }
+
+    .patrocinadores >  li > h1 {
+        font-size: clamp(.5em, .8vw + 10px, 1.5em);
+    }
+
+    .img {
+        width: 20vw;
+        height: 20svh;
+    }
+}
+
 @media only screen and (max-width: 1024px) {    
     .banner {
         width: 100%;
@@ -240,9 +259,13 @@ figcaption {
         font-size: clamp(1em .8vw, 2.5em);
     }
 
+    .patrocinadores {
+        margin-right: 5px;
+    }
+
     .patrocinador {
-        width: 200px;
-        height: 80px;
+        width: 12svw;
+        height: 6svh;
     }
 
     .subtitulo {
