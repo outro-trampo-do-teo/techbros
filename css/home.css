@@ -299,6 +299,11 @@ figcaption {
         position: initial;
         width: 60svw;
         margin: auto;
+
+    }
+
+    .patrocinadores >  li > h1 {
+        font-size: clamp(.5em, .8vw + 15px, 1.5em);
     }
 
     .patrocinadores_img {
@@ -309,8 +314,8 @@ figcaption {
     }
 
     .patrocinador {
-        width: 200px;
-        height: 70px;
+        width: 30svw;
+        height: 10svh;
     }
 
     .area_principal {
