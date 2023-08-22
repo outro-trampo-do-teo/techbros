@@ -10,11 +10,6 @@
     color: var(--rosa-techbros);
 }
 
-::-webkit-scrollbar {
-    width: 0;
-}
-
-
 #scrollpath {
     position: fixed;
     right: 0;
@@ -67,7 +62,6 @@
 body {
     background-color: var(--cor-fundo-primaria);
     color: white;
-    overflow-x: hidden;
 }
 
 img {
