@@ -10,6 +10,53 @@
     color: var(--rosa-techbros);
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+#scrollpath {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    z-index: 4;
+    background-color: white;
+}
+
+#progressbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    z-index: 5;
+    background-color: #FF009D;
+}
+
+#progressbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--rosa-techbros);
+    filter: blur(10px);
+}
+
+#progressbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--rosa-techbros);
+    filter: blur(10px);
+}
+
 * {
     margin: 0;
     padding: 0;
