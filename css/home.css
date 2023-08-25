@@ -131,7 +131,7 @@ h1 > span {
 .geral {
     display: flex;
     flex-direction: row;
-    min-width: 80%;
+    min-width: 100%;
     max-width: fit-content;
 }
 
@@ -166,8 +166,10 @@ h1 > span {
 
 .patrocinadores_img {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
+    max-width: fit-content;
+    min-width: 100%;
     gap: 20px;
 }
 
@@ -250,23 +252,20 @@ figcaption {
     
     .patrocinadores {
         font-size: clamp(1em .8vw, 2.5em);
-    }
-
-    .patrocinadores {
         margin-right: 5px;
     }
 
     .patrocinador {
-        width: 12svw;
-        height: 6svh;
+        width: 20svw;
+        height: 8svh;
     }
 
     .subtitulo {
-        font-size: clamp(1.1em, 1vw + 20px, 40px);
+        font-size: clamp(1em, 1.1vw + 15px, 40px);
     }
     
     .texto {
-        font-size: clamp(1em, 1.5vw, 19px);
+        font-size: clamp(.5em, 1.1vw + 5px, 15px);
     }
 
     .img {
@@ -276,6 +275,10 @@ figcaption {
 }
 
 @media only screen and (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+
     .banner {
         width: 100%;
         height: 35%;
@@ -289,11 +292,7 @@ figcaption {
         font-size: clamp(9.5px, 4vw + 18px, 5em);
     }
 
-    .geral {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
+
 
     .patrocinadores {
         position: initial;
@@ -314,8 +313,8 @@ figcaption {
     }
 
     .patrocinador {
-        width: 30svw;
-        height: 10svh;
+        width: 130px;
+        height: 50px;
     }
 
     .area_principal {
@@ -343,7 +342,7 @@ figcaption {
         font-size: clamp(1em, 1.7vw + 10px, 22px);
     }
 
-    img {
+    .img {
         width: 200px;
         height: 200px;
     }
@@ -379,10 +378,16 @@ figcaption {
 @media only screen and (max-width: 480px) {
     .banner {
         height: 40%;
+        padding-top: 100px;
     }
 
     .scroll {
         font-size: clamp(.5em, .4vw + .2em, 1   em);
+    }
+
+    .patrocinador {
+        width: 100px;
+        height: 50px;
     }
 
     .msg_bemvindo > h1 {    
