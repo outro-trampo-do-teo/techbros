@@ -8,27 +8,27 @@ main {
 
 .menu_topicos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: black;
     color: var(--rosa-techbros);
     gap: 10px;
     width: 15%;
     overflow-y: auto;
-    scroll-snap-type: y mandatory ;
+    justify-content: space-between;
     padding-top: 120px;
+    transition: ease-out .5s;
 }
 
 .menu_topicos > h3 {
     cursor: pointer;
 }
 
-.menu_topicos::-webkit-scrollbar {
-    width: 12px;
+.fechar_menu {
+    align-self: center;
 }
 
-.menu_topicos::-webkit-scrollbar-track {
-    background-color: white;
-    border-radius: 4px;
+.fechar_topicos_btn {
+    cursor: pointer;
 }
 
 .conteudo {

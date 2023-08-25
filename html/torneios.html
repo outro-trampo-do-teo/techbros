@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/torneios.css">
     <link rel="stylesheet" href="../css/global.css">
     <title>Torneios</title>
 </head>
 
 <body>
-
+    <div id="scrollpath"></div>
+    <div id="progressbar"></div>
     <!--Cabeçalho. Titulo e navegação. -->
     <header>
         <ul class="cabecalho">
@@ -35,14 +36,18 @@
     <main>
         
         <!-- Menu lateral de navegação entre tópicos do conteudo. -->
-        <ul class="menu_topicos">
-            <li><h3>Tópico</h3></li>
-            <li><h3>Tópico</h3></li>
-            <li><h3>Tópico</h3></li>
-            <li><h3>Tópico</h3></li>
-            <li><h3>Tópico</h3></li>
-            <li><h3>Tópico</h3></li>
-
+        <ul class="menu_topicos" id="menu_topicos">
+            <ul class="topicos">
+                <li><h3>Tópico</h3></li>
+                <li><h3>Tópico</h3></li>
+                <li><h3>Tópico</h3></li>
+                <li><h3>Tópico</h3></li>
+                <li><h3>Tópico</h3></li>
+                <li><h3>Tópico</h3></li>
+            </ul>
+            <ul class="fechar_menu">
+                <li><img src="../image/svg/seta_esquerda.svg" alt="Clique para fechar" class="fechar_topicos_btn" id="fechar_topicos_btn"></li>
+            </ul>
         </ul>
 
         <!-- Area do conteudo principal -->
@@ -66,7 +71,7 @@
     <!-- Rodapé. Contato da equipe. -->
     <footer>
         <section class="detalhes_footer">
-            <h1>Logo</h1>
+            <img src="../image/svg/logo.svg" alt="Logo" class="logo" width="200px"> 
             <ul class="contatos">
                 <li><h2>aaaaaaaaaa@email.com</h2></li>
                 <li><h2>aaaaaaaaaa@email.com</h2></li>
@@ -95,5 +100,7 @@
             <li><h3>Patrocinadores</h3></li>
         </ul>
     </footer>
+    <script src="../js/scrollanimation.js"></script>
+    <script src="../js/torneios_topicos_menu.js"></script>
 </body>
 </html>
