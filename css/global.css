@@ -165,7 +165,7 @@ footer {
     width: 50svw;
 }
 
-.resumo_time > p {
+.resumo_time.texto {
     font-size: clamp(.8em, 1.2vw, 18px);
     text-align: justify;
 }
@@ -182,14 +182,18 @@ footer {
     flex-direction: column;
     width: fit-content;
     gap: 15px;
+    z-index: 1;
 }
 
 /* Fim rodapé. */
 
 /* Responsividade */
 @media only screen and (max-width: 1024px) {
-    .resumo_time > p {
-        font-size: clamp(.5em, .6vw, 16px);
+    .contatos > li > h2 {
+        font-size: clamp(1em, .6vw + 15px, 20px);
+    }
+    .resumo_time_texto {
+        font-size: clamp(.5em, .5vw + 20px, 16px);
     }
     
     .links_internos {
@@ -202,7 +206,7 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
-    .resumo_time > p {
+    .resumo_time.texto {
         font-size: clamp(.3em, .5vw, 16px);
     }
     

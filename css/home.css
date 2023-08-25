@@ -149,24 +149,26 @@ h1 > span {
 .patrocinadores {
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     align-self: flex-start;
     flex-wrap: nowrap;
     flex-direction: column;
     max-width: fit-content;
-    min-width: 25%;
+    min-width: 15%;
     border-radius: 10px;
     z-index: 1;
 }
 
 .patrocinadores > li > h1 {
     font-size: clamp(1em, 1vw + 8px, 2em);
+    margin: auto;
 }
 
 .patrocinadores_img {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
     flex-direction: column;
     max-width: fit-content;
     min-width: 100%;
@@ -274,7 +276,7 @@ figcaption {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
     .logo {
         width: 100px;
     }
@@ -292,17 +294,22 @@ figcaption {
         font-size: clamp(9.5px, 4vw + 18px, 5em);
     }
 
-
+    .geral {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .patrocinadores {
-        position: initial;
+        padding-top: 90px;
         width: 60svw;
         margin: auto;
-
+        align-items: center;
     }
 
     .patrocinadores >  li > h1 {
         font-size: clamp(.5em, .8vw + 15px, 1.5em);
+        margin: auto;
     }
 
     .patrocinadores_img {
@@ -409,6 +416,10 @@ figcaption {
 
     figcaption {
         font-size: .7em;
+    }
+
+    .coluna_img {
+        flex-direction: column;
     }
 
     #menuAbrir {
