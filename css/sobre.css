@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    width: 100svw;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 80%;
+
+}
