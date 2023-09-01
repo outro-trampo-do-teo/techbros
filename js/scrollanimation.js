@@ -1,7 +1,5 @@
 //Animação da scrollbar.
-
 var progress = document.getElementById('progressbar')
-
 
 window.addEventListener('scroll', scrollProgress)
 

@@ -1,0 +1,37 @@
+@import url(_global.css);
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-width: 100svw;
+    max-width: fit-content;
+    padding-top: 120px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.patrocinadores  {
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    max-width: fit-content;
+    flex-wrap: wrap;
+}
+
+.img_patrocinador {
+    width: 300px;
+    flex-basis: 300px;
+}
+

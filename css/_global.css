@@ -3,6 +3,7 @@
     --rosa-secundario: #fcbdc7;
     --cor-fundo-primaria: #0a0a0a;
     --cor-fundo-secundaria: #000000e1;
+    --fonte-padrao: clamp(15px, 1vw + 8px, 20px);
 }
 
 ::selection {
@@ -268,6 +269,10 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
+    #scrollpath, #progressbar {
+        display: none;
+    }
+
     .resumo_time.texto {
         font-size: clamp(.3em, .5vw, 16px);
     }

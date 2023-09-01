@@ -1,3 +1,5 @@
+@import url(_global.css);
+
 main {
     display: flex;
     flex-direction: column;
@@ -14,6 +16,43 @@ main {
     align-items: center;
     justify-content: center;
     gap: 100px;
-    width: 80%;
+    width: 100%;
+}
 
+.descricao {
+    text-align: center;
+    width: 80%;
+}
+
+.descricao > p {
+    font-size: var(--fonte-padrao);
+}
+
+.img_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+}
+
+.img_row > picture > img {
+    width: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+    .img_row {
+        gap: 15px;
+    }
+    
+    .img_row > picture > img {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .img_row > picture > img {
+        width: 150px;
+    }
 }
