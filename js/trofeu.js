@@ -1,30 +1,40 @@
 var $patrocinadores = document.getElementById('patrocinadores')
 var $patrocinador = document.querySelectorAll('div.patrocinador')
-var $platina = document.querySelectorAll('platina')
 
-/*
-alert($patrocinador.item(array.forEach(element => {
-    
-});).className)
+//Transforma $patrocinador de nodeList para array
+var list = Array.from($patrocinador)
 
+list.forEach (div => {
+    //Troféus automáticos
 
-$patrocinador.forEach(div => {
-    if(div.className == "platina") {
+    if (div.classList.contains('platina')) {
+        //Troféu Platina
+        let trofeu = document.createElement('img')
+        trofeu.setAttribute('src', '../image/svg/trofeu_platina.svg')
+        trofeu.style.width = '90px'
 
-    } else {
-        var trofeuPlatina = document.createElement("img")
-        trofeuPlatina.setAttribute('src', '../image/svg/trofeu_platina.svg')
-        trofeuPlatina.style.width = "90px"
+        div.appendChild(trofeu)
+    } else if (div.classList.contains('ouro')){
+        //Troféu Ouro
+        let trofeu = document.createElement('img')
+        trofeu.setAttribute('src', '../image/svg/trofeu_ouro.svg')
+        trofeu.style.width = '90px'
 
-        $platina.appendChild(trofeuPlatina)
-    }
+        div.appendChild(trofeu)
+    } else if (div.classList.contains('prata')){
+        //Troféu Prata
+        let trofeu = document.createElement('img')
+        trofeu.setAttribute('src', '../image/svg/trofeu_prata.svg')
+        trofeu.style.width = '90px'
 
+        div.appendChild(trofeu)
+    } else if (div.classList.contains('bronze')){
+        //Troféu Bronze
+        let trofeu = document.createElement('img')
+        trofeu.setAttribute('src', '../image/svg/trofeu_bronze.svg')
+        trofeu.style.width = '90px'
+
+        div.appendChild(trofeu)
+    } else {}
 })
 
-
-var trofeuPlatina = document.createElement("img")
-trofeuPlatina.setAttribute('src', '../image/svg/trofeu_platina.svg')
-trofeuPlatina.style.width = "90px"
-
-$platina.appendChild(trofeuPlatina)
-*/

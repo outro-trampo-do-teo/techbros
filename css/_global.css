@@ -130,7 +130,7 @@ nav {
 body {
     background-color: var(--cor-fundo-primaria);
     color: white;
-    overflow-x: hidden;
+
 }
 
 img {
@@ -197,9 +197,10 @@ nav > h3:hover, nav > a:hover {
 footer {
     display: flex;
     flex-direction: column;
-    max-width: fit-content;
     min-width: 100svw;
+    max-width: fit-content;
     padding-top: 10svh;
+    padding-bottom: 10px;
     gap: 35px;
     background-color: var(--cor-fundo-secundaria);
 }
@@ -209,7 +210,7 @@ footer {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
     padding: 0% 20px;
 }
 

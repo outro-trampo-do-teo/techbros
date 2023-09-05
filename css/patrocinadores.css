@@ -11,27 +11,104 @@ main {
     padding-top: 120px;
 }
 
-section {
+main > section {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    min-width: 100%;
+    max-width: fit-content;
     justify-content: center;
-    gap: 20px;
+    gap: 100px;
     align-items: center;
 }
 
 .patrocinadores  {
     display: flex;
     min-width: 100%;
+    max-width: fit-content;
     justify-content: center;
     align-items: center;
-    gap: 120px;
-    max-width: fit-content;
+    flex-direction: row;
+    gap: 90px 20px;
     flex-wrap: wrap;
+}
+
+.patrocinador {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 25%;
+    max-width: fit-content;
 }
 
 .img_patrocinador {
     width: 300px;
-    flex-basis: 300px;
 }
 
+.platina > .img_patrocinador {
+    min-width: calc(300px + 10%);
+}
+
+.ouro > .img_patrocinador {
+    min-width: calc(300px + 8%);
+}
+
+.prata > .img_patrocinador {
+    min-width: calc(300px + 6%);
+}
+
+.bronze > .img_patrocinador {
+    min-width: calc(300px + 4%);
+}
+
+@media only screen and (max-width: 768px) {
+    .texto_patrocinadores {
+        margin: auto;
+        text-align: center;
+    }
+    .patrocinadores {
+        flex-direction: column; 
+    }
+    
+    .patrocinador > img {
+        width: 45vw;
+    }
+
+    .platina > .img_patrocinador {
+        min-width: calc(45vw + 10%);
+    }
+    
+    .ouro > .img_patrocinador {
+        min-width: calc(45vw + 8%);
+    }
+    
+    .prata > .img_patrocinador {
+        min-width: calc(45vw + 6%);
+    }
+    
+    .bronze > .img_patrocinador {
+        min-width: calc(45vw + 4%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .patrocinador > img {
+        width: 60vw;
+    }
+
+    .platina > .img_patrocinador {
+        min-width: calc(60vw + 10%);
+    }
+    
+    .ouro > .img_patrocinador {
+        min-width: calc(60vw + 8%);
+    }
+    
+    .prata > .img_patrocinador {
+        min-width: calc(60vw + 6%);
+    }
+    
+    .bronze > .img_patrocinador {
+        min-width: calc(60vw + 4%);
+    }
+}
