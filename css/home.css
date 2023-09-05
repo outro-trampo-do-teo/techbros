@@ -130,9 +130,13 @@ h1 > span {
 }
 
 .texto {
-    font-size: clamp(.8em, .8vw + 8px, 18px);
-    width: 300px;
+    font-size: 15px;
+    width: 500px;
     text-align: justify;
+}
+
+.sub {
+    font-size: clamp(1em, 1vw + 10px, 20px);
 }
 
 .historia, .vitorias, .sobre {
@@ -158,7 +162,11 @@ figcaption {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    min-width: 50%;
+    max-width: fit-content;
 }
+
+
 
 /* Responsividade */
 @media only screen and (max-width: 1200px) {
