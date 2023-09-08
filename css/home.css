@@ -11,6 +11,25 @@ body {
     color: #fff;
 }  
 
+#carrosel {
+    display: flex;
+    width: 100svw;
+    height: 50svh;
+}
+
+#carrosel_img {
+    width: 100%;
+}
+
+.buttons {
+    position: absolute;
+    top: calc(50% - 25svh);
+}
+
+#right {
+    left: 98%;
+}
+
 main {
     display: flex;
     column-gap: 50px;
@@ -20,13 +39,13 @@ main {
     max-width: fit-content;
     min-width: 100%;
     gap: 70px;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 .msg_bemvindo {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 100svw;
     height: 50svh;
 }
@@ -42,7 +61,6 @@ main {
 
 .msg_bemvindo > h1 { 
     margin: auto;
-    padding-top: 350px;
     text-align: center;
     font-size: clamp(1em, 3.5vw + 25px, 4em);
 }

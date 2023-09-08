@@ -1,12 +1,39 @@
+@import url(../css/_global.css);
+
+/* Menu de navegação. */
+nav {
+    display: flex;
+    align-items: center;
+    width: 100svw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-fundo-secun);
+}
+
+nav > h3, nav > a {
+    color: var(--rosa-techbros);
+    transition: ease-in-out .5s;
+    cursor: pointer;
+    padding: 0 3%;
+}
+
+nav > h3:hover, nav > a:hover {
+    background-color: var(--rosa-techbros);
+    color: var(--rosa-secundario);
+    padding: 0 8%;
+    text-align: center;
+}
+/* Fim menu de navegação. */
+
 main {
     display: flex;
     flex-direction: row;
     max-width: fit-content;
     min-width: 100svw;
-    height: 100svh;
+    padding-top: 60px;
 }
 
-.menu_topicos {
+#menu_topicos {
     display: flex;
     flex-direction: row;
     background-color: black;
@@ -16,7 +43,6 @@ main {
     overflow-y: auto;
     justify-content: space-between;
     padding-top: 120px;
-    transition: ease-out .5s;
 }
 
 .menu_topicos > h3 {
@@ -27,7 +53,14 @@ main {
     align-self: center;
 }
 
-.fechar_topicos_btn {
+#fechar_topicos_btn {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 25px;
+    top: 50%;
+    left: 13.5%;
     cursor: pointer;
 }
 
@@ -40,3 +73,18 @@ main {
     padding: 100px 9% 0% 5%;
 }
 
+@media only screen and (max-width: 768px) {
+    #fechar_topicos_btn {
+        left: 12%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #fechar_topicos_btn {
+        display: none;
+    }
+
+    .menu_topicos {
+        display: none;
+    }
+}

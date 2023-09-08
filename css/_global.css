@@ -15,7 +15,6 @@
     width: 0;
 }
 
-
 #menuAbrir {
     display: none;
 }
@@ -28,9 +27,8 @@
 
 .header_linha-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 5%;
 }
 
 .header_linha-1 > h1 {
@@ -70,13 +68,6 @@ a:link, a:visited {
     color: white;
     text-decoration: none;
 }
-
-nav {
-    justify-content: flex-start;
-    gap: 20px;
-    padding: 0 5%;
-}
-
 
 #scrollpath {
     position: fixed;
@@ -170,28 +161,6 @@ header {
     align-items: center;
     gap: 30px;
 }
-
-/* Menu de navegação. */
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--cor-fundo-secun);
-}
-
-nav > h3, nav > a {
-    color: var(--rosa-techbros);
-    transition: ease-in-out .5s;
-    cursor: pointer;
-}
-
-nav > h3:hover, nav > a:hover {
-    background-color: var(--rosa-techbros);
-    color: var(--rosa-secundario);
-    padding: 0 16.66% 0 16.66%;
-    text-align: center;
-}
-/* Fim menu de navegação. */
 
 /* Rodapé. */
 footer {

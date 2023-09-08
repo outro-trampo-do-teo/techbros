@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/torneios.css">
-    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/_global.css">
     <title>Torneios</title>
 </head>
 
@@ -13,23 +13,30 @@
     <div id="scrollpath"></div>
     <div id="progressbar"></div>
     <!--Cabeçalho. Titulo e navegação. -->
+    <ul class="info_nav_menu" id="info_nav_menu">
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Quem somos</a></li>
+        <li><a href="">Patrocinadores</a></li>
+        <li><a href="html/torneios.html">Torneios</a></li>
+    </ul>
     <header>
-        <ul class="cabecalho">
-            <li><h1>TechBros</h1></li>
-            <ul class="sobre">
-                <li><h2>Home</h2></li>
-                <li><h2>Quem Somos</h2></li>
-                <li><h2>Patrocinadores</h2></li>
+        <ul class="header_linha-1">
+            <img src="../image/svg/logo.svg" class="logo logo_header" id="logo" width="100px">
+            <ul class="info_nav"> 
+                <li><a href="html/quemsomos.html" class="link">Quem somos</a></li>
+                <li><a href="html/patrocinadores.html" class="link">Patrocinadores</a></li>
+                <li><a href="html/torneios.html" class="link">Torneios</a></li>
             </ul>
+            <p id="menuAbrir">Menu</p>
         </ul>
         <nav>
-             <h3>FLL</h3>
-             <h3>FTC</h3>
-             <h3>FRC</h3>
-             <h3>Sumo Bot</h3>
-             <h3>F1</h3>
-             <h3>Juiz</h3>
-        </nav>
+            <h3>FLL</h3>
+            <h3>FTC</h3>
+            <h3>FRC</h3>
+            <h3>Sumo Bot</h3>
+            <h3>F1</h3>
+            <h3>Juiz</h3>
+       </nav>
     </header>
 
     <!-- Corpo do site. Menu lateral e conteudo. -->
@@ -38,22 +45,19 @@
         <!-- Menu lateral de navegação entre tópicos do conteudo. -->
         <ul class="menu_topicos" id="menu_topicos">
             <ul class="topicos">
-                <li><h3>Tópico</h3></li>
-                <li><h3>Tópico</h3></li>
-                <li><h3>Tópico</h3></li>
-                <li><h3>Tópico</h3></li>
-                <li><h3>Tópico</h3></li>
-                <li><h3>Tópico</h3></li>
-            </ul>
-            <ul class="fechar_menu">
-                <li><img src="../image/svg/seta_esquerda.svg" alt="Clique para fechar" class="fechar_topicos_btn" id="fechar_topicos_btn"></li>
+                <li><a href="#">Tópico</a></li>
+                <li><a href="#">Tópico</a></li>
+                <li><a href="#">Tópico</a></li>
+                <li><a href="#">Tópico</a></li>
+                <li><a href="#">Tópico</a></li>
+                <li><a href="#">Tópico</a></li>
             </ul>
         </ul>
+        <h1 id="fechar_topicos_btn"><</h1>
 
         <!-- Area do conteudo principal -->
         <section class="conteudo">
             <h1>Titulo do tópico</h1>
-            <h3>Subtitulo do tópico</h3>
             <article>
                 <h2>Titulo do subtópico</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae illum est laborum quod molestias expedita nostrum sapiente corporis! Labore dolore provident officiis qui voluptate dignissimos sed voluptas eos similique! Dolore!</p>
@@ -63,6 +67,15 @@
                 <h2>Titulo do subtópico</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae illum est laborum quod molestias expedita nostrum sapiente corporis! Labore dolore provident officiis qui voluptate dignissimos sed voluptas eos similique! Dolore!</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed officiis animi culpa et libero ab sit eum hic amet, delectus nihil? Et ullam cum quod, obcaecati repudiandae molestiae? Excepturi, libero.</p>
+            </article>
+            <div class="midia">
+                <h2>Exemplo</h2>
+                <img src="../image/trofeu.png" width="250">
+            </div>
+            <article>
+                <h2>Subtopico</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, error autem. Amet excepturi rerum dolor tempora aspernatur numquam nam reiciendis perspiciatis odit ipsum? Esse, sunt asperiores sint nihil deserunt ducimus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos esse, deserunt itaque perspiciatis fugit quis, qui id, consequatur minus facere optio rem adipisci obcaecati! Doloremque facere vero est dignissimos corrupti.</p>
             </article>
         </section>
 
@@ -101,6 +114,7 @@
         </ul>
     </footer>
     <script src="../js/scrollanimation.js"></script>
+    <script src="../js/menuAnimation.js"></script>
     <script src="../js/torneios_topicos_menu.js"></script>
 </body>
 </html>
