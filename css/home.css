@@ -231,7 +231,7 @@ figcaption {
     }
     
     .texto {
-        font-size: clamp(.5em, 1.1vw + 5px, 15px);
+        font-size: 15px;
     }
 
     .img {
@@ -310,7 +310,7 @@ figcaption {
     }
     
     .texto {
-        font-size: clamp(1em, 1.7vw + 10px, 22px);
+        font-size: 15px;
     }
 
     .img {
